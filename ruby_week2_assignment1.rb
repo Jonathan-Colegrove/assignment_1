@@ -5,18 +5,20 @@ def total(array)
 end
 
 numbers = []
+strings = []
 
 loop do
   puts "Please enter a number"
   n = gets.chomp!
   if n.empty?
     break
-  else
+  else n.is_a? String
+    strings << n
     numbers << n.to_f
   end
 end
 
-puts "The Sum is #{total(numbers)}"
-
+puts "The Numeric Sum is #{total(numbers)}"
 average = total(numbers) / numbers.size
-puts "The Average is #{average}"
+puts "The Numeric Average is #{average}"
+puts "The Sum of the Strings is #{strings.join("")}"
