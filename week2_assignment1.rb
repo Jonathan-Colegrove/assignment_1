@@ -1,8 +1,8 @@
-def median(array)
-  sorted = array.sort
-  l = sorted.length
-  return (sorted[(l - 1) / 2] + sorted[l / 2]) / 2.0
-end
+# def median(array)
+#   sorted = array.sort
+#   l = sorted.length
+#   return (sorted[(l - 1) / 2] + sorted[l / 2]) / 2.0
+# end
 
 def total(array)
   sum = 0
@@ -27,5 +27,5 @@ end
 puts "The Numeric Sum is #{total(numbers)}"
 average = total(numbers) / numbers.size
 puts "The Numeric Average is #{average}"
-puts "The Numeric Median is #{median(numbers)}"
+# puts "The Numeric Median is #{median(numbers)}"
 puts "The Sum of the Strings is #{strings.join("")}"
