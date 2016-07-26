@@ -4,11 +4,6 @@ def median(array)
   return (sorted[(l - 1) / 2] + sorted[l / 2]) / 2.0
 end
 
-# def median(array)
-#   array.sort!
-#   return [(array.size - 1 / 2) + array(array.size / 2) / 2]
-# end
-
 def total(array)
   sum = 0
   array.each { |i| sum += i }
